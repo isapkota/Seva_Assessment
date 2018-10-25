@@ -1,0 +1,16 @@
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.WebApi.deps.json
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.WebApi.runtimeconfig.json
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.WebApi.runtimeconfig.dev.json
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.WebApi.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.WebApi.pdb
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.DataService.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.DataService.pdb
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\bin\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.pdb
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\obj\Debug\netcoreapp2.0\Seva.Assessment.WebApi.csprojResolveAssemblyReference.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\obj\Debug\netcoreapp2.0\Seva.Assessment.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\obj\Debug\netcoreapp2.0\Seva.Assessment.WebApi.AssemblyInfoInputs.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\obj\Debug\netcoreapp2.0\Seva.Assessment.WebApi.AssemblyInfo.cs
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\obj\Debug\netcoreapp2.0\Seva.Assessment.WebApi.csproj.CopyComplete
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\obj\Debug\netcoreapp2.0\Seva.Assessment.WebApi.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.WebApi\obj\Debug\netcoreapp2.0\Seva.Assessment.WebApi.pdb

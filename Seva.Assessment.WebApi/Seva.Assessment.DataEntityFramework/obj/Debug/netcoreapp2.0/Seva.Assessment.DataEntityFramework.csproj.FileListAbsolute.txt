@@ -1,0 +1,9 @@
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.deps.json
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.csprojResolveAssemblyReference.cache
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.csproj.CoreCompileInputs.cache
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.AssemblyInfoInputs.cache
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.AssemblyInfo.cs
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.pdb
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.pdb

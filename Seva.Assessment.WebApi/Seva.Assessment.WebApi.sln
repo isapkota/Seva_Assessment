@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seva.Assessment.WebApi", "Seva.Assessment.WebApi\Seva.Assessment.WebApi.csproj", "{EEC5651A-9B91-420E-A43B-546551B17969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seva.Assessment.DataService", "Seva.Assessment.DataService\Seva.Assessment.DataService.csproj", "{50D76CCB-E769-47DC-875F-79BC54D8A77A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seva.Assessment.FluentNHibernetImpl", "Seva.Assessment.FluentNHibernetImpl\Seva.Assessment.FluentNHibernetImpl.csproj", "{2934D59B-6052-467D-AC3D-0D583723AFF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seva.Assessment.FluentNHibernetImpl.Tests", "Seva.Assessment.FluentNHibernetImpl.Tests\Seva.Assessment.FluentNHibernetImpl.Tests.csproj", "{C90535AD-F87B-4E82-88D9-559B2888A728}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seva.Assessment.DataService.Test", "Seva.Assessment.DataService.Test\Seva.Assessment.DataService.Test.csproj", "{1F08A946-6FEC-4B31-860A-F5D728E58070}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEC5651A-9B91-420E-A43B-546551B17969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC5651A-9B91-420E-A43B-546551B17969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC5651A-9B91-420E-A43B-546551B17969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC5651A-9B91-420E-A43B-546551B17969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D76CCB-E769-47DC-875F-79BC54D8A77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D76CCB-E769-47DC-875F-79BC54D8A77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D76CCB-E769-47DC-875F-79BC54D8A77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D76CCB-E769-47DC-875F-79BC54D8A77A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2934D59B-6052-467D-AC3D-0D583723AFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2934D59B-6052-467D-AC3D-0D583723AFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2934D59B-6052-467D-AC3D-0D583723AFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2934D59B-6052-467D-AC3D-0D583723AFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C90535AD-F87B-4E82-88D9-559B2888A728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C90535AD-F87B-4E82-88D9-559B2888A728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C90535AD-F87B-4E82-88D9-559B2888A728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C90535AD-F87B-4E82-88D9-559B2888A728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F08A946-6FEC-4B31-860A-F5D728E58070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F08A946-6FEC-4B31-860A-F5D728E58070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F08A946-6FEC-4B31-860A-F5D728E58070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F08A946-6FEC-4B31-860A-F5D728E58070}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FD403F4-12AA-4C3D-92C5-28BE288C9907}
+	EndGlobalSection
+EndGlobal

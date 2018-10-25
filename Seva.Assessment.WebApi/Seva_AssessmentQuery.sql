@@ -1,0 +1,268 @@
+IF EXISTS(SELECT 1 FROM sys.tables WHERE object_id = OBJECT_ID('UserInterest'))
+BEGIN;
+    DROP TABLE [UserInterest];
+END;
+GO
+IF EXISTS(SELECT 1 FROM sys.tables WHERE object_id = OBJECT_ID('UserData'))
+BEGIN;
+    DROP TABLE [UserData];
+END;
+GO
+
+CREATE TABLE [UserData] (
+    [ID] INTEGER NOT NULL IDENTITY(1, 1) PRIMARY KEY,
+    [FirstName] VARCHAR(255) NULL,
+    [LastName] VARCHAR(255) NULL,
+    [EmailAddress] VARCHAR(255) NULL
+    
+);
+GO
+
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Brett','Jensen','Nulla@lacus.edu'),('Eden','Medina','a@ornare.com'),('Jarrod','Phillips','malesuada@quamelementum.net'),('Brendan','Watson','turpis@a.co.uk'),('Adara','Saunders','sit.amet@anteNunc.co.uk'),('Stuart','Gutierrez','et.tristique@aliquetmolestie.edu'),('Hunter','Mcdowell','lectus.convallis.est@cursusin.com'),('Shad','Wiggins','et@convallisestvitae.net'),('Trevor','Bradshaw','tincidunt.vehicula@neque.com'),('Louis','Dillard','egestas@Donecsollicitudin.net');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Tobias','May','augue.Sed.molestie@Namporttitorscelerisque.net'),('Wang','Oneill','libero@dictumeu.com'),('Rama','Marks','sed@nisidictum.ca'),('Quinlan','Lindsey','lorem.fringilla@adipiscingMaurismolestie.com'),('Thaddeus','Morrison','Duis@nequeNullamut.com'),('Colette','Cooley','habitant.morbi@vitaeodiosagittis.net'),('Jakeem','Roberson','cursus@liberoInteger.net'),('Kiona','Lowe','Vestibulum.ante@montes.org'),('Derek','Richmond','hendrerit.a@eueleifend.co.uk'),('Remedios','Beasley','Cras@sempertellus.ca');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('David','Jones','cursus@sedsapien.com'),('Peter','Jenkins','non.lacinia.at@diamDuis.ca'),('Perry','Snyder','ac.fermentum.vel@laoreet.org'),('Yoko','Sosa','a.felis@in.com'),('Charde','Shepherd','dolor@euismod.net'),('Paul','Dunlap','amet@Maurismagna.co.uk'),('Delilah','Terry','Fusce.dolor.quam@congue.net'),('Oleg','Mathews','magna@in.ca'),('Drake','Holt','ligula@sodales.org'),('Daria','Pennington','Donec.est@nonegestas.co.uk');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Kareem','Malone','egestas.Fusce@lobortis.com'),('Hayley','Hanson','quam.elementum@sedpedenec.com'),('Glenna','Barber','Nunc@metus.net'),('Kiona','Kidd','arcu.imperdiet@risusDonecegestas.org'),('Alisa','Sanchez','Aliquam@ligulaAenean.ca'),('Jaquelyn','Pope','libero@purusgravidasagittis.edu'),('Nayda','Tucker','ante@sodalesMauris.co.uk'),('Jonas','Mcmillan','nostra.per@Quisqueimperdieterat.co.uk'),('Zachary','Chang','ac.mattis.semper@sagittis.co.uk'),('Noah','Nguyen','blandit.at.nisi@CrasinterdumNunc.org');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Olympia','Rollins','eu@ornareFuscemollis.net'),('Sybil','Horn','placerat@egetodioAliquam.com'),('Alice','Mccoy','interdum@loremlorem.org'),('Quinlan','Sparks','ridiculus.mus@atauctorullamcorper.edu'),('Whoopi','Townsend','Phasellus@lacinia.ca'),('Colin','Dejesus','eu@NullamenimSed.net'),('Yoshio','Fitzgerald','diam.luctus.lobortis@atarcu.ca'),('Arthur','Baldwin','sit@consequatlectus.edu'),('Sean','Medina','dolor.sit.amet@sapien.net'),('Shad','Schroeder','lorem.ipsum@sedtortor.edu');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Cathleen','Curry','turpis.vitae@sed.ca'),('Azalia','Bryan','ullamcorper.Duis.at@elitpede.co.uk'),('Eden','Travis','Nam@convallisdolorQuisque.ca'),('Martin','Ferrell','pede@tempordiamdictum.com'),('Dorian','Crosby','dui@pedeCrasvulputate.com'),('Branden','Rogers','non@lectusCumsociis.net'),('Harlan','Hale','Sed.id.risus@tristiquepharetraQuisque.com'),('Sarah','Munoz','hendrerit.Donec@necanteMaecenas.net'),('Dillon','Deleon','eu.turpis.Nulla@velitAliquamnisl.edu'),('Bertha','Kemp','parturient.montes@enim.com');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Aladdin','Charles','pharetra.ut@acarcu.org'),('Yuri','Nielsen','malesuada.Integer.id@ipsum.ca'),('Brynn','Summers','eu@quisdiamluctus.com'),('Wyoming','Burgess','justo.sit.amet@consectetuerrhoncusNullam.co.uk'),('Odessa','Edwards','tellus@Aeneansedpede.co.uk'),('Jakeem','Grant','Aliquam.erat@adipiscingelitEtiam.org'),('Gretchen','Benton','tristique.pellentesque@elementumloremut.com'),('Rebekah','Nichols','ligula.tortor.dictum@et.edu'),('Paki','Norris','tincidunt.dui.augue@maurisSuspendisse.edu'),('Alan','Goff','diam@id.org');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Zachary','Parrish','Duis.dignissim.tempor@turpisIn.com'),('Latifah','Wong','et.ultrices@diamnunc.net'),('Jacqueline','Hodges','vel@tellus.ca'),('Calista','Barry','nibh.sit@Nullam.co.uk'),('Kermit','Ray','elit.dictum@lacus.co.uk'),('Zorita','Mcintyre','Sed.malesuada.augue@orciinconsequat.com'),('Patience','Montgomery','purus@etrisus.edu'),('Tanek','Bonner','facilisis.facilisis.magna@maurisidsapien.ca'),('Lacota','Sheppard','aliquet@ornareegestasligula.edu'),('Cooper','Jensen','Donec.dignissim.magna@euismodurnaNullam.net');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Kadeem','Shields','scelerisque.mollis@inhendreritconsectetuer.co.uk'),('Chaim','Brennan','quis@famesac.co.uk'),('Ivy','Washington','tempor@Curabitur.net'),('Hadassah','Armstrong','lectus.justo@euelitNulla.edu'),('Aidan','Hardin','Aliquam.rutrum@rhoncus.edu'),('Wynne','Glass','sed.facilisis@necorciDonec.edu'),('Kimberley','Mcdonald','auctor.odio@aliquetdiamSed.edu'),('Kasimir','Shaw','eget@Donecat.ca'),('Hamilton','Preston','dolor.quam@egestas.edu'),('Clarke','Thomas','malesuada@ipsumDonec.edu');
+INSERT INTO UserData([FirstName],[LastName],[EmailAddress]) VALUES('Daquan','Avery','accumsan.laoreet@nislarcuiaculis.edu'),('Wilma','Johnson','lobortis.quam.a@eratvolutpat.ca'),('Dale','Pratt','Nunc.lectus.pede@semper.net'),('Isabelle','Short','Mauris.vel@nullaCraseu.net'),('Judith','Barker','Donec.tempus.lorem@ipsum.co.uk'),('Tyrone','Baker','eleifend@aliquamerosturpis.com'),('Marsden','Morgan','at.arcu@pharetra.com'),('Astra','Chambers','Praesent.luctus@euelitNulla.com'),('Emmanuel','Kramer','Aenean@velitQuisque.net'),('Addison','Dawson','Aliquam@orcitinciduntadipiscing.co.uk');
+
+GO
+CREATE TABLE [dbo].[UserInterest](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[UserID] [int] FOREIGN KEY([UserID])
+REFERENCES [dbo].[UserData] ([ID]),
+	[Interest] [nvarchar](1024) NULL
+);
+
+INSERT INTO UserInterest(UserID, Interest) VALUES(1,'Acting / Drama');
+INSERT INTO UserInterest(UserID, Interest) VALUES(1,'Amateur astronomy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(1,'Amateur radio');
+INSERT INTO UserInterest(UserID, Interest) VALUES(2,'Animals and pets');
+INSERT INTO UserInterest(UserID, Interest) VALUES(2,'Archery');
+INSERT INTO UserInterest(UserID, Interest) VALUES(3,'Backgammon');
+INSERT INTO UserInterest(UserID, Interest) VALUES(3,'Basketball');
+INSERT INTO UserInterest(UserID, Interest) VALUES(3,'Blogging');
+INSERT INTO UserInterest(UserID, Interest) VALUES(4,'Board games');
+INSERT INTO UserInterest(UserID, Interest) VALUES(5,'Bodybuilding');
+INSERT INTO UserInterest(UserID, Interest) VALUES(5,'Calligraphy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(6,'Car restoration');
+INSERT INTO UserInterest(UserID, Interest) VALUES(6,'Chess');
+INSERT INTO UserInterest(UserID, Interest) VALUES(7,'Childcare');
+INSERT INTO UserInterest(UserID, Interest) VALUES(7,'Club leadership');
+INSERT INTO UserInterest(UserID, Interest) VALUES(8,'Coding / Programming');
+INSERT INTO UserInterest(UserID, Interest) VALUES(8,'Collecting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(8,'Cooking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(8,'Crafts');
+INSERT INTO UserInterest(UserID, Interest) VALUES(9,'Creative writing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(9,'Cricket');
+INSERT INTO UserInterest(UserID, Interest) VALUES(9,'Crossword puzzles');
+INSERT INTO UserInterest(UserID, Interest) VALUES(10,'Cycling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(11,'Dancing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(12,'Drawing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(13,'Fishing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(13,'Football');
+INSERT INTO UserInterest(UserID, Interest) VALUES(14,'Gambling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(14,'Gardening');
+INSERT INTO UserInterest(UserID, Interest) VALUES(15,'Genealogy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(16,'Golf');
+INSERT INTO UserInterest(UserID, Interest) VALUES(17,'Hiking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(17,'Hunting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(18,'Investing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(18,'Jigsaw puzzles');
+INSERT INTO UserInterest(UserID, Interest) VALUES(19,'Knitting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(20,'Landscaping');
+INSERT INTO UserInterest(UserID, Interest) VALUES(21,'Languages');
+INSERT INTO UserInterest(UserID, Interest) VALUES(22,'Lego building');
+INSERT INTO UserInterest(UserID, Interest) VALUES(23,'Marathon running');
+INSERT INTO UserInterest(UserID, Interest) VALUES(24,'Martial arts');
+INSERT INTO UserInterest(UserID, Interest) VALUES(24,'Meditation');
+INSERT INTO UserInterest(UserID, Interest) VALUES(25,'Model building');
+INSERT INTO UserInterest(UserID, Interest) VALUES(25,'Mountain biking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(26,'Mountain climbing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(26,'Musical instrument');
+INSERT INTO UserInterest(UserID, Interest) VALUES(27,'Online classes');
+INSERT INTO UserInterest(UserID, Interest) VALUES(27,'Origami');
+INSERT INTO UserInterest(UserID, Interest) VALUES(28,'Painting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(29,'Papermaking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(30,'Parachuting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(30,'Paragliding');
+INSERT INTO UserInterest(UserID, Interest) VALUES(31,'Photography');
+INSERT INTO UserInterest(UserID, Interest) VALUES(31,'Pottery');
+INSERT INTO UserInterest(UserID, Interest) VALUES(31,'Reading');
+INSERT INTO UserInterest(UserID, Interest) VALUES(40,'Recycling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(41,'Robotics');
+INSERT INTO UserInterest(UserID, Interest) VALUES(32,'Rock climbing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(33,'Running / Jogging');
+INSERT INTO UserInterest(UserID, Interest) VALUES(34,'Sailing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(35,'Singing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(36,'Skiing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(37,'Skydiving');
+INSERT INTO UserInterest(UserID, Interest) VALUES(38,'Snooker / Pool');
+INSERT INTO UserInterest(UserID, Interest) VALUES(39,'Socialising');
+INSERT INTO UserInterest(UserID, Interest) VALUES(42,'Squash');
+INSERT INTO UserInterest(UserID, Interest) VALUES(42,'Surfing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(43,'Swimming');
+INSERT INTO UserInterest(UserID, Interest) VALUES(43,'Tennis');
+INSERT INTO UserInterest(UserID, Interest) VALUES(44,'Travelling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(45,'Video games');
+INSERT INTO UserInterest(UserID, Interest) VALUES(45,'Video production');
+INSERT INTO UserInterest(UserID, Interest) VALUES(46,'Volunteering');
+INSERT INTO UserInterest(UserID, Interest) VALUES(46,'Woodworking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(46,'Yoga');
+INSERT INTO UserInterest(UserID, Interest) VALUES(47,'Acting / Drama');
+INSERT INTO UserInterest(UserID, Interest) VALUES(47,'Amateur astronomy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(48,'Amateur radio');
+INSERT INTO UserInterest(UserID, Interest) VALUES(48,'Animals and pets');
+INSERT INTO UserInterest(UserID, Interest) VALUES(49,'Archery');
+INSERT INTO UserInterest(UserID, Interest) VALUES(49,'Backgammon');
+INSERT INTO UserInterest(UserID, Interest) VALUES(50,'Basketball');
+INSERT INTO UserInterest(UserID, Interest) VALUES(50,'Blogging');
+INSERT INTO UserInterest(UserID, Interest) VALUES(50,'Board games');
+INSERT INTO UserInterest(UserID, Interest) VALUES(50,'Bodybuilding');
+INSERT INTO UserInterest(UserID, Interest) VALUES(51,'Calligraphy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(51,'Car restoration');
+INSERT INTO UserInterest(UserID, Interest) VALUES(51,'Chess');
+INSERT INTO UserInterest(UserID, Interest) VALUES(51,'Childcare');
+INSERT INTO UserInterest(UserID, Interest) VALUES(51,'Club leadership');
+INSERT INTO UserInterest(UserID, Interest) VALUES(52,'Coding / Programming');
+INSERT INTO UserInterest(UserID, Interest) VALUES(52,'Collecting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(53,'Cooking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(53,'Crafts');
+INSERT INTO UserInterest(UserID, Interest) VALUES(54,'Creative writing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(54,'Cricket');
+INSERT INTO UserInterest(UserID, Interest) VALUES(55,'Crossword puzzles');
+INSERT INTO UserInterest(UserID, Interest) VALUES(56,'Cycling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(56,'Dancing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(57,'Drawing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(57,'Fishing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(57,'Football');
+INSERT INTO UserInterest(UserID, Interest) VALUES(58,'Gambling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(58,'Gardening');
+INSERT INTO UserInterest(UserID, Interest) VALUES(59,'Genealogy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(59,'Golf');
+INSERT INTO UserInterest(UserID, Interest) VALUES(60,'Hiking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(60,'Hunting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(61,'Investing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(62,'Jigsaw puzzles');
+INSERT INTO UserInterest(UserID, Interest) VALUES(63,'Knitting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(64,'Landscaping');
+INSERT INTO UserInterest(UserID, Interest) VALUES(64,'Languages');
+INSERT INTO UserInterest(UserID, Interest) VALUES(65,'Lego building');
+INSERT INTO UserInterest(UserID, Interest) VALUES(66,'Marathon running');
+INSERT INTO UserInterest(UserID, Interest) VALUES(67,'Martial arts');
+INSERT INTO UserInterest(UserID, Interest) VALUES(68,'Meditation');
+INSERT INTO UserInterest(UserID, Interest) VALUES(69,'Model building');
+INSERT INTO UserInterest(UserID, Interest) VALUES(70,'Mountain biking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(71,'Mountain climbing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(71,'Musical instrument');
+INSERT INTO UserInterest(UserID, Interest) VALUES(72,'Online classes');
+INSERT INTO UserInterest(UserID, Interest) VALUES(72,'Origami');
+INSERT INTO UserInterest(UserID, Interest) VALUES(72,'Painting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(72,'Papermaking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(73,'Parachuting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(73,'Paragliding');
+INSERT INTO UserInterest(UserID, Interest) VALUES(73,'Photography');
+INSERT INTO UserInterest(UserID, Interest) VALUES(74,'Pottery');
+INSERT INTO UserInterest(UserID, Interest) VALUES(75,'Reading');
+INSERT INTO UserInterest(UserID, Interest) VALUES(75,'Recycling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(75,'Robotics');
+INSERT INTO UserInterest(UserID, Interest) VALUES(76,'Rock climbing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(76,'Running / Jogging');
+INSERT INTO UserInterest(UserID, Interest) VALUES(77,'Sailing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(78,'Singing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(79,'Skiing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(79,'Skydiving');
+INSERT INTO UserInterest(UserID, Interest) VALUES(79,'Snooker / Pool');
+INSERT INTO UserInterest(UserID, Interest) VALUES(80,'Socialising');
+INSERT INTO UserInterest(UserID, Interest) VALUES(81,'Squash');
+INSERT INTO UserInterest(UserID, Interest) VALUES(81,'Surfing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(81,'Swimming');
+INSERT INTO UserInterest(UserID, Interest) VALUES(81,'Tennis');
+INSERT INTO UserInterest(UserID, Interest) VALUES(81,'Travelling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(82,'Video games');
+INSERT INTO UserInterest(UserID, Interest) VALUES(82,'Video production');
+INSERT INTO UserInterest(UserID, Interest) VALUES(83,'Volunteering');
+INSERT INTO UserInterest(UserID, Interest) VALUES(83,'Woodworking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(83,'Yoga');
+INSERT INTO UserInterest(UserID, Interest) VALUES(84,'Acting / Drama');
+INSERT INTO UserInterest(UserID, Interest) VALUES(84,'Amateur astronomy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(84,'Amateur radio');
+INSERT INTO UserInterest(UserID, Interest) VALUES(85,'Animals and pets');
+INSERT INTO UserInterest(UserID, Interest) VALUES(85,'Archery');
+INSERT INTO UserInterest(UserID, Interest) VALUES(85,'Backgammon');
+INSERT INTO UserInterest(UserID, Interest) VALUES(86,'Basketball');
+INSERT INTO UserInterest(UserID, Interest) VALUES(86,'Blogging');
+INSERT INTO UserInterest(UserID, Interest) VALUES(86,'Board games');
+INSERT INTO UserInterest(UserID, Interest) VALUES(86,'Bodybuilding');
+INSERT INTO UserInterest(UserID, Interest) VALUES(86,'Calligraphy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(87,'Car restoration');
+INSERT INTO UserInterest(UserID, Interest) VALUES(87,'Chess');
+INSERT INTO UserInterest(UserID, Interest) VALUES(88,'Childcare');
+INSERT INTO UserInterest(UserID, Interest) VALUES(89,'Club leadership');
+INSERT INTO UserInterest(UserID, Interest) VALUES(89,'Coding / Programming');
+INSERT INTO UserInterest(UserID, Interest) VALUES(89,'Collecting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(90,'Cooking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(91,'Crafts');
+INSERT INTO UserInterest(UserID, Interest) VALUES(91,'Creative writing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(91,'Cricket');
+INSERT INTO UserInterest(UserID, Interest) VALUES(91,'Crossword puzzles');
+INSERT INTO UserInterest(UserID, Interest) VALUES(91,'Cycling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(92,'Dancing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(92,'Drawing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(92,'Fishing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(92,'Football');
+INSERT INTO UserInterest(UserID, Interest) VALUES(92,'Gambling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(93,'Gardening');
+INSERT INTO UserInterest(UserID, Interest) VALUES(93,'Genealogy');
+INSERT INTO UserInterest(UserID, Interest) VALUES(93,'Golf');
+INSERT INTO UserInterest(UserID, Interest) VALUES(94,'Hiking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(94,'Hunting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(94,'Investing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(95,'Jigsaw puzzles');
+INSERT INTO UserInterest(UserID, Interest) VALUES(95,'Knitting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(96,'Landscaping');
+INSERT INTO UserInterest(UserID, Interest) VALUES(96,'Languages');
+INSERT INTO UserInterest(UserID, Interest) VALUES(97,'Lego building');
+INSERT INTO UserInterest(UserID, Interest) VALUES(97,'Marathon running');
+INSERT INTO UserInterest(UserID, Interest) VALUES(97,'Martial arts');
+INSERT INTO UserInterest(UserID, Interest) VALUES(98,'Meditation');
+INSERT INTO UserInterest(UserID, Interest) VALUES(99,'Model building');
+INSERT INTO UserInterest(UserID, Interest) VALUES(98,'Mountain biking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(98,'Mountain climbing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(99,'Musical instrument');
+INSERT INTO UserInterest(UserID, Interest) VALUES(99,'Online classes');
+INSERT INTO UserInterest(UserID, Interest) VALUES(100,'Origami');
+INSERT INTO UserInterest(UserID, Interest) VALUES(31,'Painting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(31,'Papermaking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(32,'Parachuting');
+INSERT INTO UserInterest(UserID, Interest) VALUES(32,'Paragliding');
+INSERT INTO UserInterest(UserID, Interest) VALUES(33,'Photography');
+INSERT INTO UserInterest(UserID, Interest) VALUES(33,'Pottery');
+INSERT INTO UserInterest(UserID, Interest) VALUES(34,'Reading');
+INSERT INTO UserInterest(UserID, Interest) VALUES(34,'Recycling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(35,'Robotics');
+INSERT INTO UserInterest(UserID, Interest) VALUES(36,'Rock climbing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(37,'Running / Jogging');
+INSERT INTO UserInterest(UserID, Interest) VALUES(37,'Sailing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(38,'Singing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(38,'Skiing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(39,'Skydiving');
+INSERT INTO UserInterest(UserID, Interest) VALUES(39,'Snooker / Pool');
+INSERT INTO UserInterest(UserID, Interest) VALUES(54,'Socialising');
+INSERT INTO UserInterest(UserID, Interest) VALUES(65,'Squash');
+INSERT INTO UserInterest(UserID, Interest) VALUES(78,'Surfing');
+INSERT INTO UserInterest(UserID, Interest) VALUES(90,'Swimming');
+INSERT INTO UserInterest(UserID, Interest) VALUES(99,'Tennis');
+INSERT INTO UserInterest(UserID, Interest) VALUES(98,'Travelling');
+INSERT INTO UserInterest(UserID, Interest) VALUES(100,'Video games');
+INSERT INTO UserInterest(UserID, Interest) VALUES(100,'Video production');
+INSERT INTO UserInterest(UserID, Interest) VALUES(100,'Volunteering');
+INSERT INTO UserInterest(UserID, Interest) VALUES(1,'Woodworking');
+INSERT INTO UserInterest(UserID, Interest) VALUES(1,'Yoga');
+
+GO
+
+

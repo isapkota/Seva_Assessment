@@ -1,0 +1,17 @@
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.csprojResolveAssemblyReference.cache
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.csproj.CoreCompileInputs.cache
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.AssemblyInfoInputs.cache
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.AssemblyInfo.cs
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.deps.json
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.runtimeconfig.json
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.runtimeconfig.dev.json
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.pdb
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\bin\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.pdb
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.csproj.CopyComplete
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.dll
+c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataEntityFramework.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.DataEntityFramework.Tests.pdb

@@ -1,0 +1,8 @@
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\bin\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.deps.json
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\bin\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\bin\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.pdb
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.csproj.CoreCompileInputs.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.AssemblyInfoInputs.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.AssemblyInfo.cs
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.pdb

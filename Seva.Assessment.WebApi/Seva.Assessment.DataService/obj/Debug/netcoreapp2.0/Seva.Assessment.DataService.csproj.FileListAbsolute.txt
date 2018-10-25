@@ -1,0 +1,12 @@
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\bin\Debug\netcoreapp2.0\Seva.Assessment.DataService.deps.json
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\bin\Debug\netcoreapp2.0\Seva.Assessment.DataService.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\bin\Debug\netcoreapp2.0\Seva.Assessment.DataService.pdb
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\bin\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\bin\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.pdb
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\obj\Debug\netcoreapp2.0\Seva.Assessment.DataService.csprojResolveAssemblyReference.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\obj\Debug\netcoreapp2.0\Seva.Assessment.DataService.csproj.CoreCompileInputs.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\obj\Debug\netcoreapp2.0\Seva.Assessment.DataService.AssemblyInfoInputs.cache
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\obj\Debug\netcoreapp2.0\Seva.Assessment.DataService.AssemblyInfo.cs
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\obj\Debug\netcoreapp2.0\Seva.Assessment.DataService.csproj.CopyComplete
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\obj\Debug\netcoreapp2.0\Seva.Assessment.DataService.dll
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.DataService\obj\Debug\netcoreapp2.0\Seva.Assessment.DataService.pdb
