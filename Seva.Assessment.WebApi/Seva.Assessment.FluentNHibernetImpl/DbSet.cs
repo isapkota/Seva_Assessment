@@ -11,9 +11,9 @@ namespace Seva.Assessment.FluentNHibernetImpl
     public interface IDbSet<T> : ICollection<T> where T : Entity
     {
         void SetSession(ISession nSession);
-        IList<T> FindAll(Specification<T> specification);
-        IList<T> FindAll(Expression<Func<T, bool>> filter);
-        IList<T> FindAll();
+        IQueryable<T> FindAll(Specification<T> specification);
+        IQueryable<T> FindAll(Expression<Func<T, bool>> filter);
+        IQueryable<T> FindAll();
         T FindOne(Specification<T> specification);
         T FindOne(Expression<Func<T, bool>> filter);
         void Update(T item);
@@ -64,17 +64,17 @@ namespace Seva.Assessment.FluentNHibernetImpl
         {
             throw new NotImplementedException();
         }
-        public IList<T> FindAll(Specification<T> specification)
+        public IQueryable<T> FindAll(Specification<T> specification)
         {
-            return GetQuery(specification).ToList();
+            return GetQuery(specification).AsQueryable();
         }
-        public IList<T> FindAll(Expression<Func<T, bool>> filter)
+        public IQueryable<T> FindAll(Expression<Func<T, bool>> filter)
         {
-            return GetQuery(filter).AsQueryable().ToList();
+            return GetQuery(filter).AsQueryable();
         }
-        public IList<T> FindAll()
+        public IQueryable<T> FindAll()
         {
-            return Session.Query<T>().AsQueryable().ToList();
+            return Session.Query<T>().AsQueryable();
         }
 
         public T FindOne(Specification<T> specification)
@@ -117,11 +117,11 @@ namespace Seva.Assessment.FluentNHibernetImpl
               .Where(specification.ToExpression());
         }
 
-        private IEnumerable<T> GetQuery(
+        private IQueryable<T> GetQuery(
           Expression<Func<T, bool>> filter)
         {
             var query = Session.Query<T>().Where(filter);
-            return query.ToList();
+            return query.AsQueryable();
         }
 
         IEnumerator IEnumerable.GetEnumerator()

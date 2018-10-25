@@ -15,3 +15,4 @@ c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetI
 c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.Tests.csproj.CopyComplete
 c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.Tests.dll
 c:\users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl.Tests\obj\Debug\netcoreapp2.0\Seva.Assessment.FluentNHibernetImpl.Tests.pdb
+C:\Users\is\source\repos\Seva.Assessment.WebApi\Seva.Assessment.FluentNHibernetImpl.Tests\bin\Debug\netcoreapp2.0\appsettings.json

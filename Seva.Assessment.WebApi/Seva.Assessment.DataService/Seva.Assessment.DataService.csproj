@@ -7,7 +7,10 @@
   <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
     <PackageReference Include="LinqSpecs" Version="3.0.0" />
+    <PackageReference Include="NLog" Version="4.5.10" />
     <PackageReference Include="System.Data.SqlClient" Version="4.5.1" />
+    <PackageReference Include="Unity" Version="5.8.11" />
+    <PackageReference Include="Unity.WebAPI" Version="5.3.0" />
   </ItemGroup>
 
   <ItemGroup>

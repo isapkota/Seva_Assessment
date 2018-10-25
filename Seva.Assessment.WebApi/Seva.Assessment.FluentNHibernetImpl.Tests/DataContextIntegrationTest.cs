@@ -1,16 +1,26 @@
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Mapping;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 using Xunit;
 
 namespace Seva.Assessment.FluentNHibernetImpl.Tests
 {
-    public class DataContextTest : IDisposable
+    public class DataContextIntegrationTest : IDisposable
     {
-        NHibernate.ISessionFactory _sessionFactory = Fluently.Configure()
+        NHibernate.ISessionFactory _sessionFactory = null;
+         
+        public DataContextIntegrationTest()
+        {
+            var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+
+            var connectionString = config.GetConnectionString("DefaultConnection");
+            _sessionFactory = Fluently.Configure()
                 .Database(FluentNHibernate.Cfg.Db.MsSqlConfiguration.MsSql2012
-                    .ConnectionString("Data Source=.;Initial Catalog=Seva_Assessment;Persist Security Info=True;User ID=sa;Password=CaFt@#85647")
+                    .ConnectionString(connectionString)
                     .ShowSql()
                 )
                 .ExposeConfiguration(x => { x.SetInterceptor(new SqlStatementInterceptor()); })
@@ -18,8 +28,7 @@ namespace Seva.Assessment.FluentNHibernetImpl.Tests
                     .AddFromAssemblyOf<TestUser>()
                 )
                 .BuildSessionFactory();
-        public DataContextTest()
-        {
+
             using (DataContext<TestUser> context = new DataContext<TestUser>(_sessionFactory))
             {
                 var query = context.CurrentSession.CreateSQLQuery("IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES a WHERE a.TABLE_NAME='TestUser') DROP TABLE TestUser;CREATE TABLE TestUser(Id INT IDENTITY(1,1) PRIMARY KEY,LoginUser NVARCHAR(100),[Password] NVARCHAR(100));");
@@ -28,7 +37,7 @@ namespace Seva.Assessment.FluentNHibernetImpl.Tests
         }
 
         [Fact]
-        public void TestAddEntity()
+        public void DataContext_Data_AddOne_Verify()
         {
             using (DataContext<TestUser> context = new DataContext<TestUser>(_sessionFactory))
             {
@@ -38,17 +47,27 @@ namespace Seva.Assessment.FluentNHibernetImpl.Tests
                     Password="password"
                 });
             }
+
+            //verifying added data
+            IQueryable<TestUser> users = null;
+            using (DataContext<TestUser> context = new DataContext<TestUser>(_sessionFactory))
+            {
+                users = context.Data.FindAll();
+                Assert.NotEmpty(users);
+                Assert.Equal(1, users.Count());
+            }
+            
         }
 
         [Fact]
-        public void TestGetEntity()
+        public void DataContext_GetAllData_Added_Recently()
         {
             using (DataContext<TestUser> context = new DataContext<TestUser>(_sessionFactory))
             {
                 context.Data.Add(new TestUser()
                 {
-                    LoginUser = "Ishwor",
-                    Password = "password"
+                    LoginUser = "Ishwor0",
+                    Password = "password0"
                 });
                 context.Data.Add(new TestUser()
                 {
@@ -62,14 +81,14 @@ namespace Seva.Assessment.FluentNHibernetImpl.Tests
                 });
             }
             //list test
-            IEnumerable<TestUser> users = null;
+            IList<TestUser> users = null;
             using (DataContext<TestUser> context = new DataContext<TestUser>(_sessionFactory))
             {
-                users = context.Data.FindAll();
+                users = context.Data.FindAll().ToList();
             }
 
             Assert.NotEmpty(users);
-
+            
             //singletest 
             TestUser selectiveUser = null;
 
@@ -93,14 +112,17 @@ namespace Seva.Assessment.FluentNHibernetImpl.Tests
             {
                 using (DataContext<TestUser> context = new DataContext<TestUser>(_sessionFactory))
                 {
-                    var query = context.CurrentSession.CreateSQLQuery("IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES a WHERE a.TABLE_NAME='TestUser') DROP TABLE TestUser;");
-                    query.UniqueResult();
+                    if (context.CurrentSession.IsOpen)
+                    {
+                        var query = context.CurrentSession.CreateSQLQuery("IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.TABLES a WHERE a.TABLE_NAME='TestUser') DROP TABLE TestUser;");
+                        query.UniqueResult();
+                    }
                 }
             }
         }
 
 
-        ~DataContextTest()
+        ~DataContextIntegrationTest()
         {
             Dispose(false);
         }

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "433d23f63cb5387c25fbec29d90c935b1564c0ad"
+    "signature": "001597872c6d610b1533f7735e00aa3e17916846"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,8 +10,11 @@
         "dependencies": {
           "FluentNHibernate": "2.1.2",
           "LinqSpecs": "3.0.0",
+          "NLog": "4.5.10",
           "Seva.Assessment.FluentNHibernetImpl": "1.0.0",
-          "System.Data.SqlClient": "4.5.1"
+          "System.Data.SqlClient": "4.5.1",
+          "Unity": "5.8.11",
+          "Unity.WebAPI": "5.3.0"
         },
         "runtime": {
           "Seva.Assessment.DataService.dll": {}
@@ -41,6 +44,19 @@
       "LinqSpecs/3.0.0": {
         "runtime": {
           "lib/netstandard2.0/LinqSpecs.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
         }
       },
       "Microsoft.NETCore.Targets/1.1.0": {},
@@ -76,6 +92,11 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/NHibernate.dll": {}
+        }
+      },
+      "NLog/4.5.10": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
         }
       },
       "Remotion.Linq/2.1.2": {
@@ -221,8 +242,8 @@
           "System.Linq": "4.1.0",
           "System.ObjectModel": "4.0.12",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.0.1",
-          "System.Reflection.Emit.ILGeneration": "4.0.1",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Emit.Lightweight": "4.0.1",
           "System.Reflection.Extensions": "4.0.1",
           "System.Reflection.Primitives": "4.3.0",
@@ -299,16 +320,16 @@
         }
       },
       "System.Reflection.DispatchProxy/4.4.0": {},
-      "System.Reflection.Emit/4.0.1": {
+      "System.Reflection.Emit/4.3.0": {
         "dependencies": {
           "System.IO": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.0.1",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Emit.ILGeneration/4.0.1": {
+      "System.Reflection.Emit.ILGeneration/4.3.0": {
         "dependencies": {
           "System.Reflection": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
@@ -318,7 +339,7 @@
       "System.Reflection.Emit.Lightweight/4.0.1": {
         "dependencies": {
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.0.1",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
           "System.Runtime": "4.3.0"
         }
@@ -469,6 +490,31 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "Unity/5.8.11": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.4.1",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/CommonServiceLocator.dll": {},
+          "lib/netcoreapp2.0/Unity.Abstractions.dll": {},
+          "lib/netcoreapp2.0/Unity.Configuration.dll": {},
+          "lib/netcoreapp2.0/Unity.Container.dll": {},
+          "lib/netcoreapp2.0/Unity.Interception.Configuration.dll": {},
+          "lib/netcoreapp2.0/Unity.Interception.dll": {},
+          "lib/netcoreapp2.0/Unity.RegistrationByConvention.dll": {},
+          "lib/netcoreapp2.0/Unity.ServiceLocation.dll": {}
+        }
+      },
+      "Unity.WebAPI/5.3.0": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "5.2.3",
+          "Unity": "5.8.11"
+        },
+        "runtime": {
+          "lib/net45/Unity.WebApi.dll": {}
+        }
+      },
       "Seva.Assessment.FluentNHibernetImpl/1.0.0": {
         "dependencies": {
           "FluentNHibernate": "2.1.2",
@@ -514,6 +560,20 @@
       "path": "linqspecs/3.0.0",
       "hashPath": "linqspecs.3.0.0.nupkg.sha512"
     },
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w5w8GVLMmo+JzizmcuV01tgYn2OsaVhxGAO0ryKXkO5sob6EVjzcoJv8NHL3Xm98vywSh7kRgeLqbA/lxZuTXg==",
+      "path": "microsoft.aspnet.webapi.client/5.2.3",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.3.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bP+PAx17AVQJ19aU9N7yMnz8yST1U9cekbYHRyIUvQzFLqqzrthEs/gLdyZiLJPmL4ZABuvwGBOXG/ukqmsbDg==",
+      "path": "microsoft.aspnet.webapi.core/5.2.3",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.3.nupkg.sha512"
+    },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -534,6 +594,13 @@
       "sha512": "sha512-x8zFdjzEfSAzt1uB7Mq9X1hsrGEM1f23HqtUwt2FwF4731L5LV06MwDW5qneSAA95YDhnA44TzarlhiiWLAvEw==",
       "path": "nhibernate/5.1.1",
       "hashPath": "nhibernate.5.1.1.nupkg.sha512"
+    },
+    "NLog/4.5.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IXZEFeDj/R3OL6bCcLNVFVFlBxp4zey9X2RdmISG+P9hp0uivIgkN6nBqCIE6yF0dRrUBye84uaD7emNVmqAnQ==",
+      "path": "nlog/4.5.10",
+      "hashPath": "nlog.4.5.10.nupkg.sha512"
     },
     "Remotion.Linq/2.1.2": {
       "type": "package",
@@ -689,19 +756,19 @@
       "path": "system.reflection.dispatchproxy/4.4.0",
       "hashPath": "system.reflection.dispatchproxy.4.4.0.nupkg.sha512"
     },
-    "System.Reflection.Emit/4.0.1": {
+    "System.Reflection.Emit/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-P2wqAj72fFjpP6wb9nSfDqNBMab+2ovzSDzUZK7MVIm54tBJEPr9jWfSjjoTpPwj1LeKcmX3vr0ttyjSSFM47g==",
-      "path": "system.reflection.emit/4.0.1",
-      "hashPath": "system.reflection.emit.4.0.1.nupkg.sha512"
+      "sha512": "sha512-228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+      "path": "system.reflection.emit/4.3.0",
+      "hashPath": "system.reflection.emit.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.Emit.ILGeneration/4.0.1": {
+    "System.Reflection.Emit.ILGeneration/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ov6dU8Bu15Bc7zuqttgHF12J5lwSWyTf1S+FJouUXVMSqImLZzYaQ+vRr1rQ0OZ0HqsrwWl4dsKHELckQkVpgA==",
-      "path": "system.reflection.emit.ilgeneration/4.0.1",
-      "hashPath": "system.reflection.emit.ilgeneration.4.0.1.nupkg.sha512"
+      "sha512": "sha512-59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "path": "system.reflection.emit.ilgeneration/4.3.0",
+      "hashPath": "system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512"
     },
     "System.Reflection.Emit.Lightweight/4.0.1": {
       "type": "package",
@@ -835,6 +902,20 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "Unity/5.8.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-C9LCcDvwJBXDx/A3Tlc5AUGfEv9WWAk8ZL+OwK7vrS3tqImlRpw+sFNY4nyzkdPMyyuwpYG4Jov3PHvhFJyNdw==",
+      "path": "unity/5.8.11",
+      "hashPath": "unity.5.8.11.nupkg.sha512"
+    },
+    "Unity.WebAPI/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YdzYj9sC6VQXASzl8p4dsLGnk+XLhH+IL9JV04fMj0dmk04kl3JMSAviGfivism9ttVg23VyF063Xxvggqjx1g==",
+      "path": "unity.webapi/5.3.0",
+      "hashPath": "unity.webapi.5.3.0.nupkg.sha512"
     },
     "Seva.Assessment.FluentNHibernetImpl/1.0.0": {
       "type": "project",
