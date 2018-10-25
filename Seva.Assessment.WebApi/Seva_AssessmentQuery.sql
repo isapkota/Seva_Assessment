@@ -11,8 +11,8 @@ GO
 
 CREATE TABLE [UserData] (
     [ID] INTEGER NOT NULL IDENTITY(1, 1) PRIMARY KEY,
-    [FirstName] VARCHAR(255) NULL,
-    [LastName] VARCHAR(255) NULL,
+    [FirstName] VARCHAR(50) NULL,
+    [LastName] VARCHAR(50) NULL,
     [EmailAddress] VARCHAR(255) NULL
     
 );
@@ -34,7 +34,7 @@ CREATE TABLE [dbo].[UserInterest](
 	[ID] [int] IDENTITY(1,1) NOT NULL,
 	[UserID] [int] FOREIGN KEY([UserID])
 REFERENCES [dbo].[UserData] ([ID]),
-	[Interest] [nvarchar](1024) NULL
+	[Interest] [nvarchar](255) NULL
 );
 
 INSERT INTO UserInterest(UserID, Interest) VALUES(1,'Acting / Drama');

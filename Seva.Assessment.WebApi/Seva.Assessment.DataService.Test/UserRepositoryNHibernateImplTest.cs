@@ -78,7 +78,7 @@ namespace Seva.Assessment.DataService.Test
 
             DataFactory.BuildUp(r => r.RegisterInstance(typeof(IDataContext<UserData>), mockContext.Object));
             var userRepo = new Seva.Assessment.DataService.UserRepositoryNHibernateImpl();
-            var allUsers= userRepo.GetUsers();
+            var allUsers= userRepo.GetAllUsers();
             Assert.NotNull(allUsers);
             Assert.Equal(allUsers.Count(), _testUserData.Count());
         }
@@ -96,7 +96,7 @@ namespace Seva.Assessment.DataService.Test
 
             DataFactory.BuildUp(r => r.RegisterInstance(typeof(IDataContext<UserData>), mockContext.Object));
             var userRepo = new Seva.Assessment.DataService.UserRepositoryNHibernateImpl();
-            var selectedUsers = userRepo.GetUsers(It.IsAny<string>());
+            var selectedUsers = userRepo.GetUsersBySearchString(It.IsAny<string>());
             Assert.NotNull(selectedUsers);
             Assert.Equal(selectedUsers.Count(), selectedData.Count());
         }

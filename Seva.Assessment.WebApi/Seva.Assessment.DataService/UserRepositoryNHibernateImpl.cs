@@ -11,18 +11,18 @@ namespace Seva.Assessment.DataService
 {
     public class UserRepositoryNHibernateImpl
     {
-        public IList<UserData> GetUsers(string name)
+        public IList<UserData> GetUsersBySearchString(string searchName)
         {
             return ErrorHandler.Handle(() =>
             {
                 using (var context = DataFactory.GetInstance<IDataContext<UserData>>())
                 {
-                    return context.Data.FindAll(x => x.FirstName.ToLower().Contains(name.ToLower()) || x.LastName.ToLower().Contains(name.ToLower())).ToList();
+                    return context.Data.FindAll(x => x.FirstName.ToLower().Contains(searchName.ToLower()) || x.LastName.ToLower().Contains(searchName.ToLower())).ToList();
                 }
             });
         }
 
-        public IList<UserData> GetUsers()
+        public IList<UserData> GetAllUsers()
         {
             return ErrorHandler.Handle(() =>
            {
